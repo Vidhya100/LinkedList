@@ -22,6 +22,11 @@
             list.Display();
             list.Insert(30, 56);
             list.Display();
+            list.DeleteFirst();
+            list.Display();
+
+            //list.Deletelast();
+            //list.Display();
         }
     }
 }

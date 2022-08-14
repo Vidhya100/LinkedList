@@ -70,6 +70,55 @@ namespace LinkedList
             }
         }
 
+        public void DeleteFirst()
+        {
+            Node temp = this.head;
+
+            if(temp.next != null)
+            {
+                //changing position of head to head.next
+                //changing next of head to null
+                head = temp.next;                
+                temp.next = null;
+            }
+            else 
+            {
+                head = null;
+            }
+            
+        }
+
+        public void Deletelast()
+        {
+            Node temp = this.head;
+            Node temp2 = this.head;
+
+            //if only one element is there then head do null
+            if (head.next == null)
+            {
+                head = null;
+            }
+            //checking heade next is not null then travrese with temp next 
+            //till end
+            while (temp.next != null)
+            {
+                temp = temp.next;
+            }
+            //checking if temp2 next is temp which next is null
+            //then make temp2.next is null
+            while (temp2 != null)
+            {
+                if (temp2.next == temp)
+                {
+                    temp2.next = null;
+                    
+                }
+                temp2 = temp2.next;
+
+            }
+
+        }
+
         public void Display()
         {
             Node temp =  this.head;
