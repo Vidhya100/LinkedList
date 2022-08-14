@@ -11,6 +11,12 @@
             list.Add(56);
            
             list.Display();
+
+            list.Append(56);
+            list.Append(30);
+            list.Append(70);
+
+            list.Display();
         }
     }
 }
