@@ -6,7 +6,11 @@
         {
             LinkedList list = new LinkedList();
 
-            Console.WriteLine("Linked list created.");
+            list.Add(70);
+            list.Add(30);
+            list.Add(56);
+           
+            list.Display();
         }
     }
 }
